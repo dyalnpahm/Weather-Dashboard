@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="dashboard-header pb-1 pt-3">
+    <h1>Weather Dashboard</h1>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4 pt-3">
+        <p class="search">Search City</p>
+        <div>
+
+          <input class="form-control " id="cities" type="text" placeholder="Search city here.."
+            aria-label="Enter city" />
+          <div class="input-group-append mt-3">
+            <button class="btn btn-primary" type="submit" id="searchBtn"><i class="fa fa-search"></i></button>
+            <button class="btn btn-danger col-2 ml-2" type="submit" id="clearBtn">Clear</button>
+          </div>
+        </div>
+          <div > 
+
+            <p id="searches"></p>
+          </div>
+      </div>
+<div class="middle"></div>
+      <div class="col-10">
+        <div class="row mr-0">
+          <span>
+            <div class="col-12 col-md-12 pt-1 pb-4 pr-5 border border-primary " id="weather-container">
+
+          </span>
+
+
+          <div class="row mt-4 ">
+            <div class="col-12">
+              <span id="city" class="city align-middle"></span>
+              <p id="todays-weather-header">Weather</p>
+              <img id="todays-pic" src="" alt="sunshine image" height="60px">
+              <p id="todaysDate"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <p id="temperature"></p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <p id="humidity"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 d-flex">
+              <p id="wind"></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </body>
+
+    
+    <main>
+      <div class="row">
+        <div class="col-12">
+          <h3>5-Day Forecast</h3>
+        </div>
+      </div>
+
+      <div class="row forecast-container">
+        <div class="col bg-secondary text-white ml-3 ">
+          <p id="forecastDay1">Day 1</p>
+          <div>
+            <p id="forecastDate1"></p>
+          </div>
+          <div>
+            <img id="forecast-pic1" src="" alt="" >
+          </div>
+          <div>
+            <p id="forecastTemp1"></p>
+          </div>
+          <div>
+            <p id="forecastHumidity1"></p>
+          </div>
+          <div>
+            <p id="forecastWind1"></p>
+          </div>
+        </div>
+
+        <div class="col bg-secondary text-white ml-3 ">
+          <p id="forecastDay2">Day 2</p>
+          <div>
+            <p id="forecastDate2"></p>
+          </div>
+          <div>
+            <img id="forecast-pic2" src="" alt="" >
+          </div>
+          <div>
+            <p id="forecastTemp2"></p>
+          </div>
+          <div>
+            <p id="forecastHumidity2"></p>
+          </div>
+          <div>
+            <p id="forecastWind2"></p>
+          </div>
+        </div>
+
+        <div class="col bg-secondary text-white ml-3 ">
+          <p id="forecastDay3">Day 3</p>
+          <div>
+            <p id="forecastDate3"></p>
+          </div>
+          <div>
+            <img id="forecast-pic3" src="" alt="" >
+          </div>
+          <div>
+            <p id="forecastTemp3"></p>
+          </div>
+          <div>
+            <p id="forecastHumidity3"></p>
+          </div>
+          <div>
+            <p id="forecastWind3"></p>
+          </div>
+        </div>
+
+        <div class="col bg-secondary text-white ml-3 ">
+          <p id="forecastDay4">Day 4</p>
+          <div>
+            <p id="forecastDate4"></p>
+          </div>
+          <div>
+            <img id="forecast-pic4" src="" alt="" >
+          </div>
+          <div>
+            <p id="forecastTemp4"></p>
+          </div>
+          <div>
+            <p id="forecastHumidity4"></p>
+          </div>
+          <div>
+            <p id="forecastWind4"></p>
+          </div>
+        </div>
+
+        <div class="col bg-secondary text-white ml-3 ">
+          <p id="forecastDay5">Day 5</p>
+          <div>
+            <p id="forecastDate5"></p>
+          </div>
+          <div>
+            <img id="forecast-pic5" src="" alt="" >
+          </div>
+          <div>
+            <p id="forecastTemp5"></p>
+          </div>
+          <div>
+            <p id="forecastHumidity5"></p>
+          </div>
+          <div>
+            <p id="forecastWind5"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
+  </div>
+</main>
+
+</html>
+
